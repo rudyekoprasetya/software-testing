@@ -9,21 +9,21 @@ $gender=$_POST['gender'];
 
 try {
     $result = validateAge($umur);
-    echo "PASS: Umur ".$umur. " diterima\n";
+    echo "PASS: Umur ".$umur. " diterima\n <br>";
 } catch (Exception $e) {
-    echo "FAIL: Umur ".$umur. " tidak diterima. Error: " . $e->getMessage() . "\n";
+    echo "FAIL: Umur ".$umur. " tidak diterima. Error: " . $e->getMessage() . "\n <br>";
 }
 
 try {
     $result = ValidateName($nama);
-    echo "PASS: nama ".$nama. " Seharusnya diterima \n";
+    echo "PASS: nama ".$nama. " Seharusnya diterima \n <br>";
 } catch (Exception $e) {
-    echo "FAIL: input ".$nama. " ditolak. Error ". $e->getMessage() . "\n";
+    echo "FAIL: input ".$nama. " ditolak. Error ". $e->getMessage() . "\n <br>";
 }
 
 try {
     $result = validateGender($gender);
-    echo "PASS: Jenis kelamin ".$gender. " diterima \n";
+    echo "PASS: Jenis kelamin ".$gender. " diterima \n <br>";
 } catch (Exception $e) {
-    echo "FAIL: Jenis kelamin ".$gender. " tidak diterima. Error: " . $e->getMessage() . "\n";
+    echo "FAIL: Jenis kelamin ".$gender. " tidak diterima. Error: " . $e->getMessage() . "\n <br>";
 }
