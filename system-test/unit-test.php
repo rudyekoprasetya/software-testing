@@ -4,7 +4,7 @@ include("config/config.php");
 
 //test case 1 tanpa api key
 try {
-    $api_key=""
+    $api_key="";
     $url="https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=".$api_key;
     //menyimpan hasil dalam variabel
     $data=http_request_get($url); 
