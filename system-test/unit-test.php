@@ -17,7 +17,7 @@ try {
 
 //test case 2 salah kode country
 try {
-    $api_key=""
+    $api_key="";
     $url="https://newsapi.org/v2/top-headlines?country=indo&apiKey=".$api_key;
     //menyimpan hasil dalam variabel
     $data=http_request_get($url); 
