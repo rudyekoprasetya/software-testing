@@ -3,7 +3,7 @@
 include("config/config.php");
  
 //untuk api_key newsapi.org
-$api_key="51dfd39984fe476f90f625457f70c96a";
+$api_key="INVALID_KEY";
  
 //url api untuk ambil berita headline di Indonesia
 $url="https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=".$api_key;
